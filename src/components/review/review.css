@@ -1,0 +1,77 @@
+.scrollContainer{
+    overflow-x: scroll;
+}
+.scrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.review-container {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+    margin-top: 120px;
+}
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    min-height: 260px;
+    justify-content: space-between;
+    min-width: 40%;
+    border: 1px solid #F0C0B5;
+    border-radius: 20px;
+    padding: 28px 28px;
+    margin-right: 24px;
+    margin-bottom: 80px;
+}
+.review-caption {
+    align-self: flex-end;
+    margin-right: 40px;
+
+}
+.review-text .review-caption {
+    font-size: 20px;
+}
+.selected-text {
+    color: #438644;
+    font-size: 24px;
+}
+
+@media (max-width: 992px) {
+    .review-text .review-caption {
+        font-size: 18px;
+    }
+    .selected-text {
+        font-size: 20px;
+    }
+    .review-card {
+        min-width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .review-card {
+        min-width: 70%;
+    }
+}
+@media (max-width: 576px) {
+    .review-card{
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    .scrollCard {
+        overflow-y: auto;
+    }
+    .review-card {
+        max-height: 50%;
+    }
+    .scrollCard::-webkit-scrollbar {
+        display: none;
+    }
+    .review-container {
+        margin-top: 40px;
+        max-height: 260px;
+    }
+}

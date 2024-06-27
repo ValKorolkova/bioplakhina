@@ -1,0 +1,65 @@
+.education-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.education-title {
+    font-size: 24px;
+    color: #438644;
+    margin-bottom: 36px;
+}
+.education-description {
+    font-size: 24px;
+}
+.education-icon {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.education-icon.showNow {
+    opacity: 1;
+    transform: translateY(0);
+}
+.education-icon.delay-1{
+    transition-delay: 0.3s;
+}
+
+.education-icon.delay-2{
+    transition-delay: 0.6s;
+}
+
+.education-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+    .education-container {
+        margin-top: 40px;
+        padding: 0;
+    }
+}
+@media (max-width: 576px) {
+    .education-title {
+        font-size: 20px;
+        margin-bottom: 26px;
+    }
+    .education-description {
+        font-size: 18px;
+    }
+    .education-container {
+        margin-top: 20px;
+    }
+    .education-icon {
+        margin-bottom: 20px;
+    }
+}

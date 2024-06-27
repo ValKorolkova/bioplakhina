@@ -1,0 +1,41 @@
+.active {
+    padding: 10px 30px;
+    border: 1px solid #8BC2A1;
+    cursor: pointer;
+    background-color: #EBE5E6;
+    }
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    }
+    
+.default {
+    padding: 10px 30px;
+    border: 1px solid #8BC2A1;
+    cursor: pointer;
+}
+    
+ .accordion-content {
+    padding: 20px 30px;
+    border: 1px solid #8BC2A1;
+    font-size: 20px;
+}
+.arrowDown {
+    transition: transform 0.3s;
+     margin-left: auto;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+.research-link {
+    color: #8BC2A1;
+    text-decoration: none;
+}
+@media (max-width: 576px) {
+    .accordion-header{
+        font-size: 20px;
+        }
+}

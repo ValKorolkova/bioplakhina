@@ -1,38 +1,182 @@
-.App {
+
+
+/* Navbar */
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.myNavbar-container {
+  /* display: flex;
+  justify-content: space-around; */
+  margin-top: 1%;
+}
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-menu div {
+  width: 40px;
+  height: 2px;
+  background-color: #438644;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.nav-links-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+.logo-bioplakhina {
+  font-size: 28px;
+  text-decoration: none;
+  background: #75B4C0;
+  background: linear-gradient(to bottom, #75B4C0 0%, #F0C0B5 82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 6px;
+}
+
+/* Button */
+
+.buttonOne {
+  background-color: #F0C0B5;
+  color: #FFFFFF;
+  font-size: 24px;
+  border: 1px solid #F0C0B5;
+  border-radius: 20px;
+  padding: 24px 160px ;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttonOne:hover {
+  border: 1px solid #F0C0B5;
+  background-color: #ffffff;
+  color: #F0C0B5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lora-regular {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.lora-medium  {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.lora-italic  {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.cormorant-medium {
+  font-family: "Cormorant", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.cormorant-light {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* About */
+
+.title-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.title-text {
+  font-size: 40px;
+  color: #75B4C0;
+}
+.line-title {
+  border-bottom: 1px solid #8BC2A1;
+  width:50%;
+  height: 100%;
+  margin-top: 2%;
+}
+.main-section-title {
+  font-size: 48px;
+  color: #438644;
+  margin-top: 76px;
+  margin-bottom: 76px;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 992px) {
+  .buttonOne {
+    font-size: 20px;
+    padding: 14px 100px ;
+  }
+  .main-section-title {
+    font-size: 38px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+  
 }
+@media (max-width: 768px) {
+  .logo-bioplakhina {
+    font-size: 24px;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .buttonOne {
+    font-size: 18px;
+    padding: 10px 60px ;
+  }
+  .title-text {
+    font-size: 30px;
+    color: #75B4C0;
+  }
+}
+@media (max-width: 576px) {
+  .nav-links-container {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      padding: 10px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .burger-menu {
+      display: flex;
   }
-  to {
-    transform: rotate(360deg);
+ 
+
+  .burger-menu.open div:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
   }
+
+  .burger-menu.open div:nth-child(2) {
+      opacity: 0;
+  }
+
+  .burger-menu.open div:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav-links-container.open {
+      display: flex;
+  }
+  .buttonOne {
+    margin-bottom: 20px;
+    padding: 6px 40px ;
+  }
+  .main-section-title {
+    margin-top: 46px;
+    margin-bottom: 46px;
+    font-size: 28px;
+  }
+  .title-text {
+    font-size: 24px;
+  }
+
 }
