@@ -5,7 +5,26 @@ import "./review.css"
 
 function Review () {
 
-    const [review] = useState(ReviewData)
+    const [review] = useState(ReviewData);
+    const parseText = (text) => {
+        const parts = text.split(/(\[highlight\]|\[\/highlight\])/);
+        let isHighlighted = false;
+        return parts.map((part, index) => {
+            if (part === '[highlight]') {
+                isHighlighted = true;
+                return null;
+            } else if (part === '[/highlight]') {
+                isHighlighted = false;
+                return null;
+            } else {
+                return isHighlighted ? (
+                   <span key={index} className="selected-text">{part}</span>
+                ) : (
+                <span key={index}>{part}</span>
+            );
+            }
+        })
+    }
 
 
     return (
@@ -22,7 +41,7 @@ function Review () {
                         const {id, text, caption} = item;
                         return(
                             <div key={id} className="review-card scrollCard">
-                                <div className="review-text lora-regular">{text}</div>
+                                <div className="review-text lora-regular">{parseText(text)}</div>
                                 <p className="review-caption lora-regular">{caption}</p>
                             </div>
                         )

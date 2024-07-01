@@ -25,13 +25,16 @@ function About () {
                 threshold: 0.5,
             }
         );
-        titleRefs.current.forEach(ref => {
+
+        const currentTitleRefs = titleRefs.current;
+
+        currentTitleRefs.forEach(ref => {
             if (ref) {
                 observer.observe(ref);
             }
         });
         return () => {
-            titleRefs.current.forEach(ref => {
+            currentTitleRefs.forEach(ref => {
                 if (ref) {
                     observer.unobserve(ref);
                 }

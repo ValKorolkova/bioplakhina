@@ -3,7 +3,7 @@ import plakhina from "./Plakhina_cut.png"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./firstPage.css";
-import ButtonOne from "../buttons/ButtonOne";
+import Button from "../button/Button";
 
 function FirstPage(){
     return(
@@ -15,7 +15,7 @@ function FirstPage(){
                 <Col sm={12} md={6} className="d-flex flex-column justify-content-center quote-first-page-container">
                         <h1 className="quote-first-page cormorant-medium">“Мне нравится вкладывать силы и время в развитие учеников”</h1>
                     <div className="btn-join">
-                       <ButtonOne />
+                       <Button />
                     </div>
                 </Col>
             </Row>

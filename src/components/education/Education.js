@@ -3,12 +3,12 @@ import camera from "./camera.png";
 import book from "./book.png";
 import clock from "./clock.png";
 import "./education.css"
-import ButtonOne from "../buttons/ButtonOne";
+import Button from "../button/Button";
 import { useEffect, useRef } from "react";
 
 function Education() {
     const sectionRef = useRef([]);
-
+    
     useEffect(() => {
         const observer = new IntersectionObserver(
             entries => {
@@ -23,14 +23,16 @@ function Education() {
                 threshold :0.1,
             }
         );
-        sectionRef.current.forEach((ref, index) => {
+        const currentSectionRef = sectionRef.current;
+
+        currentSectionRef.forEach((ref, index) => {
             if (ref) {
                 ref.classList.add(`delay-${index}`);
                 observer.observe(ref);
             }
         });
         return () => {
-            sectionRef.current.forEach(ref => {
+            currentSectionRef.forEach(ref => {
                 if (ref) {
                     observer.unobserve (ref);
                 }
@@ -71,7 +73,7 @@ function Education() {
                 </Row>
             </Container>
             <div className="education-btn-container">
-                <ButtonOne />
+                <Button />
             </div>
         </div>
     )

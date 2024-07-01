@@ -2,7 +2,7 @@
     background: rgb(235,229,230);
     background: linear-gradient(0deg, rgba(235,229,230,1) 0%, rgba(235,229,230,1) 50%, rgba(117,180,192,1) 100%); 
     height: 80vh;
-    margin-left: 0 !important;
+    margin: 0 !important;
     display: flex;
     justify-content: center;
 }
