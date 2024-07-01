@@ -10,6 +10,7 @@ import { useEffect, useRef } from "react";
 function About () {
 
     const titleRefs = useRef([]);
+    
 
     useEffect(() => {
         const observer = new IntersectionObserver(
