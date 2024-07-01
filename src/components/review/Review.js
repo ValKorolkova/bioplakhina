@@ -5,7 +5,7 @@ import "./review.css"
 
 function Review () {
 
-    const [review,setReview] = useState(ReviewData)
+    const [review] = useState(ReviewData)
 
 
     return (
