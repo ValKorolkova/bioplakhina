@@ -2,18 +2,18 @@ import "./modal.css"
 import React from "react";
 
 
-const ModalD = ( { setIsOpen, children }) => {
-    const closeModal = e => {
-        if (e.target.classList.contains('overlay')) {
-            console.log(setIsOpen)
-            setIsOpen(false)
+const ModalD = ( { setModalIsOpen, children }) => {
+    const closeModalD = e => {
+        if (e.target.classList.contains('overlayD')) {
+            console.log(setModalIsOpen)
+            setModalIsOpen(false)
         }
     }
     
         return (
            
-            <div className='modal'>
-                <div className='overlay' onClick={closeModal}>{children}</div>
+            <div className='modalD'>
+                <div className='overlayD' onClick={closeModalD}>{children}</div>
             </div>
         )
     }

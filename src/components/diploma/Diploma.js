@@ -1,13 +1,13 @@
 import {  useState } from "react";
 import "./diploma.css"
-import ModalContent from "../modal/ModalContent";
+import ModalDContent from "../modal/ModalContent";
 import ModalD from "../modal/ModalD";
 
 
 
 function Diploma () {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
    
   
     return(
@@ -26,10 +26,10 @@ function Diploma () {
             </div>
           
             <div className="open-modal-btn-container">
-            <button className="open-modal-btn lora-regular" onClick={() => setIsOpen(true)}>Мой диплом</button>
-            {isOpen &&
-      <ModalD setIsOpen={setIsOpen}>
-           <ModalContent setIsOpen={setIsOpen}/>
+            <button className="open-modal-btn lora-regular" onClick={() => setModalIsOpen(true)}>Мой диплом</button>
+            {modalIsOpen &&
+      <ModalD setModalIsOpen={setModalIsOpen}>
+           <ModalDContent setModalIsOpen={setModalIsOpen}/>
       </ModalD>
       }
             </div>
