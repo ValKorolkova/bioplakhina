@@ -7,19 +7,18 @@ import Button from "../button/Button";
 
 function FirstPage(){
     return(
-        <Container fluid className="p-0 first-page-container" >
-            <Row className="first-container">
-                <Col sm={12} md={6} className="text-center img-container">
-                        <img src={plakhina} alt="Daria Plakhina" className="img-fluid mb-3 img-plakhina"/>
-                </Col>
-                <Col sm={12} md={6} className="d-flex flex-column justify-content-center quote-first-page-container">
-                        <h1 className="quote-first-page cormorant-medium">“Мне нравится вкладывать силы и время в развитие учеников”</h1>
-                    <div className="btn-join">
-                       <Button />
-                    </div>
-                </Col>
-            </Row>
-        </Container>
+<Container fluid className="p-0 first-page-container">
+  <Row className="first-container">
+    <Col sm={12} className="d-flex flex-column justify-content-center align-items-center quote-first-page-container">
+      <h1 className="quote-first-page cormorant-medium">
+        “Мне нравится вкладывать силы и время в развитие учеников”
+      </h1>
+      <div className="btn-join">
+        <Button>Присоединиться</Button>
+      </div>
+    </Col>
+  </Row>
+</Container>
     )
 }
 export default FirstPage;

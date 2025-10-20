@@ -7,6 +7,7 @@
 
 .footerContainer {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .footer-contact-container {
     display: flex;

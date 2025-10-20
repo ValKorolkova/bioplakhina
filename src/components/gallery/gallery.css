@@ -1,32 +1,61 @@
+.gallery-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 2rem;
+}
+
 .gallery-image-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  max-width: 700px;
 }
+
 .gallery-image {
-    max-width: 50%;
-   
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
-.gallery-btn-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
+
+.gallery-image:hover {
+  transform: scale(1.02);
 }
+
+/* Стрелки */
 .gallery-btn {
-    background-color: #F0C0B5;
-    color: #FFFFFF;
-    font-size: 24px;
-    border: 1px solid #F0C0B5;
-    border-radius: 20px;
-    padding: 14px 60px ;
-    text-align: center;
-    width: 40%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
 }
+
 .gallery-btn:hover {
-    border: 1px solid #F0C0B5;
-    background-color: #ffffff;
-    color: #F0C0B5;
+  transform: scale(1.15);
 }
+
+.arrow-icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: #0f4336;
+  transition: stroke 0.3s ease;
+}
+
+.gallery-btn:hover svg {
+  stroke: #2a7d67;
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+
+
 @media (max-width: 992px) {
     .gallery-btn {
         font-size: 18px;

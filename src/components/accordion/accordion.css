@@ -1,8 +1,9 @@
 .active {
     padding: 10px 30px;
-    border: 1px solid #8BC2A1;
+    border: 1px solid #0f4336;
     cursor: pointer;
-    background-color: #EBE5E6;
+    background-color: #0f4336;
+    color:#fff
     }
 .accordion-header{
     display: flex;
@@ -13,29 +14,45 @@
     
 .default {
     padding: 10px 30px;
-    border: 1px solid #8BC2A1;
+    border: 1px solid #0f4336;
     cursor: pointer;
+    color: #0f4336;
 }
     
  .accordion-content {
     padding: 20px 30px;
-    border: 1px solid #8BC2A1;
+    border: 1px solid #0f4336;
     font-size: 20px;
 }
 .arrowDown {
-    transition: transform 0.3s;
-     margin-left: auto;
+    width: 20px;
+    height: 20px;
+    color: #0f4336;
+    transition: transform 0.3s ease;
 }
 
 .rotate {
     transform: rotate(180deg);
+    color: #fff;
 }
 .research-link {
-    color: #8BC2A1;
+    color: #0f4336;
     text-decoration: none;
+}
+.patent {
+    display: flex;
+    justify-content: center;
+}
+.img_patent{
+    width: 80%;
+    margin-top: 100px;
 }
 @media (max-width: 576px) {
     .accordion-header{
         font-size: 20px;
+        }
+    .img_patent{
+            width: 40%;
+            margin-top: 100px;
         }
 }

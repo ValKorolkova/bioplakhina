@@ -11,7 +11,7 @@ function Diploma () {
    
   
     return(
-        <div className="about-container">
+        <div className="about-container diploma-container-color">
             <div className="title-container">
                 <h2 className="title-text cormorant-light">Образование</h2>
                 <div className="line-title"></div>

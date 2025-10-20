@@ -2,21 +2,27 @@
     display: flex;
     margin-top: 76px;
     margin-bottom: 76px;
+    background-color: #301D1E;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 .exrerience-title {
     margin: 0;
+    color:#fff
+
 }
 .exrerience-description {
     font-size: 32px;
-    color: black;
+    color: #fff;
     margin-top: 10px;
 }
 .public-photo{
     width: 90%;
+    border-radius: 20px;
 }
 
 .experience-text {
-    color: #F0C0B5;
+    color: #0f4336;
     font-size: 32px;
     margin-bottom: 20px;
     padding: 10px 0;
@@ -25,6 +31,14 @@
 .accordion-experience-container {
     display: flex;
     flex-direction: column;
+}
+@media (max-width: 1024px){
+.experience-title-container {
+
+    margin-top: 76px;
+    margin-bottom: 10px;
+
+}
 }
 @media (max-width: 992px) {
     .exrerience-description {

@@ -9,20 +9,22 @@
 
 .education-title {
     font-size: 24px;
-    color: #438644;
+    color: #0f4336;
     margin-bottom: 36px;
 }
 .education-description {
     font-size: 24px;
 }
 .education-icon {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    color: #0f4336;
     align-self: center;
     margin-bottom: 60px;
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+     opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.8s ease;
+    
 }
 .education-icon.showNow {
     opacity: 1;
@@ -40,7 +42,10 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    
 }
+
+
 
 @media (max-width: 768px) {
     .education-container {

@@ -21,22 +21,28 @@
     min-height: 260px;
     justify-content: space-between;
     min-width: 40%;
-    border: 1px solid #F0C0B5;
+    border: none;
     border-radius: 20px;
     padding: 28px 28px;
     margin-right: 24px;
     margin-bottom: 80px;
+    background-color: #301D1E;
 }
 .review-caption {
     align-self: flex-end;
     margin-right: 40px;
+    color: #fff;
 
+}
+.review_color{
+  color: #fff;
 }
 .review-text .review-caption {
     font-size: 20px;
+    
 }
 .selected-text {
-    color: #438644;
+    color: #fff;
     font-size: 24px;
 }
 

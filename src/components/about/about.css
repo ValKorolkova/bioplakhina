@@ -3,6 +3,33 @@
     margin-top: 180px;
     margin-right: 122px;
 }
+.about-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px; 
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.about-text {
+  flex: 1; /* занимает всё доступное место */
+  min-width: 250px; /* чтобы не было слишком сжатым на мобилках */
+  text-align: left;
+}
+.about-photo-container {
+  flex: 1 0 200px; /* фиксированная ширина для фото */
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%; /* круглая форма */
+  object-fit: cover;
+  object-position: 60% 30%;
+}
+
 
 .about-col{
     margin-bottom: 82px;
@@ -27,10 +54,11 @@
 }
 .about-title-number {
     font-size: 40px;
+    color:  #301D1E ;
 }
 .about-title-text {
     font-size: 32px;
-    color: #F0C0B5;
+    color: #301D1E;
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -42,9 +70,47 @@
     width: 70%;
     margin-left: 24px;
 }
+.icon-container{
+    width: 80px;
+    height: 80px;
+    color: rgb(15, 67, 54, 1)  ;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;            /* полностью прозрачный */
+    transform: translateX(-50px); /* сдвинут влево */
+  }
+  to {
+    opacity: 1;            /* полностью видимый */
+    transform: translateX(0);      /* на месте */
+  }
+}
+
+.about-short-description {
+    font-size: 24px;
+    color: #301D1E;
+    font-style: italic;
+    opacity: 0;
+   animation: fadeInLeft 1.5s ease forwards;
+  animation-delay: 2.5s;
+}
+
+@media (max-width: 1024px){
+    .about-container {
+    margin-top: 10vh;
+}
+}
 @media (max-width: 992px) {
+    .about-intro {
+    flex-direction: column-reverse; /* фото сверху или снизу */
+    align-items: center;
+    text-align: center;
+  }
+   .about-photo-container {
+    margin-bottom: 20px;
+  }
     .about-title-number {
-        font-size: 30px;
+        font-size: 34px;
         width: 100px;
     }
     .about-title-text {
@@ -62,7 +128,7 @@
     .about-container {
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 80px;
+        /* margin-top: 80px; */
     }
     .about-title-number {
         font-size: 24px;

@@ -28,21 +28,21 @@ function Review () {
 
 
     return (
-        <div className="about-container">
+        <div className="about-container ">
             <div className="title-container">
                 <h2 className="title-text cormorant-light">Отзывы моих учеников</h2>
                 <div className="line-title"></div>
             </div>
-            <Container>
-                <div className="scrollContainer ">
-                <Row>
+            <Container >
+                <div className="scrollContainer rewiew-main-container ">
+                <Row className="">
                     <Col sm={10} xl={4} className='review-container'>
                     {review.map((item => {
                         const {id, text, caption} = item;
                         return(
                             <div key={id} className="review-card scrollCard">
-                                <div className="review-text lora-regular">{parseText(text)}</div>
-                                <p className="review-caption lora-regular">{caption}</p>
+                                <div className="review-text lora-regular review_color">{parseText(text)}</div>
+                                <p className="review-caption lora-regular review_color">{caption}</p>
                             </div>
                         )
                     }))}

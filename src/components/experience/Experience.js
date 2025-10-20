@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "./experience.css";
-import publicPhoto from "./public.jpg"
+import publicPhoto from "./daria-exp.jpg"
 import { Accordion } from "../accordion/Accordion";
 
 function Experience() {

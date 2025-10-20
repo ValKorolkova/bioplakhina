@@ -1,3 +1,4 @@
+
 .diploma-mgu-container{
     display: flex;
     flex-direction: column;
@@ -6,12 +7,12 @@
 }
 .diploma-section-title {
     font-size: 48px;
-    color: #438644;
+    color: #301D1E;
     margin-top: 76px;
 }
 .diploma-title {
     font-size: 32px;
-    color: #F0C0B5;
+    color: #0f4336;
 }
 .mgu-description {
     font-size: 32px;
@@ -24,18 +25,18 @@
     justify-content: center;
 }
 .open-modal-btn {
-    border: 1px solid #438644;
+    border: 1px solid #0f4336;
     border-radius: 20px;
     padding: 24px 160px;
-    background-color: transparent;
+    background-color:#0f4336;
     margin-top: 94px;
     font-size: 24px;
-    color: #438644;
+    color: #fff;
 }
 .open-modal-btn:hover {
-    border: 1px solid #F0C0B5;
-    background-color: #ffffff;
-    color: #F0C0B5;
+    border: 1px solid #0f4336;
+    background-color: transparent;
+    color: #0f4336;
 }
 @media (max-width: 992px) {
     .diploma-section-title {
@@ -49,7 +50,7 @@
         font-size: 20px;
     }
     .open-modal-btn {
-        padding: 14px 100px ;
+        padding: 20px 80px ;
         margin-top: 74px;
         font-size: 20px;
     }
@@ -70,7 +71,7 @@
     }
     .open-modal-btn {
         margin-bottom: 20px;
-        padding: 6px 60px ;
+        padding: 16px 60px ;
           
     }
 }

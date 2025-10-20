@@ -20,7 +20,7 @@
 .burger-menu div {
   width: 40px;
   height: 2px;
-  background-color: #438644;
+  background-color: #0F4336;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -32,8 +32,8 @@
 .logo-bioplakhina {
   font-size: 28px;
   text-decoration: none;
-  background: #75B4C0;
-  background: linear-gradient(to bottom, #75B4C0 0%, #F0C0B5 82%);
+  background: #301D1E;
+  background: linear-gradient(to bottom, #301D1E 0%, #0F4336 82%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 6px;
@@ -42,18 +42,18 @@
 /* Button */
 
 .buttonOne {
-  background-color: #F0C0B5;
+  background-color: #0f4336;;
   color: #FFFFFF;
   font-size: 24px;
-  border: 1px solid #F0C0B5;
+  border: 1px solid #0f4336;
   border-radius: 20px;
-  padding: 24px 160px ;
+  padding: 24px 160px;
   text-align: center;
 }
 .buttonOne:hover {
-  border: 1px solid #F0C0B5;
+  border: 1px solid #0f4336;
   background-color: #ffffff;
-  color: #F0C0B5;
+  color: #301D1E;
 }
 
 .lora-regular {
@@ -90,17 +90,17 @@
 }
 .title-text {
   font-size: 40px;
-  color: #75B4C0;
+  color: #301D1E;
 }
 .line-title {
-  border-bottom: 1px solid #8BC2A1;
+  border-bottom: 1px solid #301D1E;
   width:50%;
   height: 100%;
   margin-top: 2%;
 }
 .main-section-title {
   font-size: 48px;
-  color: #438644;
+  color: #0F4336;
   margin-top: 76px;
   margin-bottom: 76px;
 }
@@ -108,7 +108,7 @@
 @media (max-width: 992px) {
   .buttonOne {
     font-size: 20px;
-    padding: 14px 100px ;
+    padding: 20px 80px ;
   }
   .main-section-title {
     font-size: 38px;
@@ -126,24 +126,35 @@
   }
   .buttonOne {
     font-size: 18px;
-    padding: 10px 60px ;
+    padding: 20px 80px ;
   }
   .title-text {
     font-size: 30px;
-    color: #75B4C0;
+    color: #301D1E;
   }
 }
 @media (max-width: 576px) {
   .nav-links-container {
-      display: none;
+       display: flex;
       flex-direction: column;
       align-items: center;
       position: absolute;
-      top: 40px;
+      top: 60px; /* расстояние от верха navbar */
       left: 0;
       right: 0;
       background-color: #ffffff;
-      padding: 10px;
+      padding: 20px 0;
+      gap: 15px;
+      opacity: 0;
+      transform: translateY(-20px);
+      pointer-events: none;
+      transition: all 0.3s ease;
+      z-index: 1000;
+  }
+  .nav-links-container.open {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
   }
 
   .burger-menu {
@@ -168,7 +179,7 @@
   }
   .buttonOne {
     margin-bottom: 20px;
-    padding: 6px 40px ;
+    padding: 16px 60px ;
   }
   .main-section-title {
     margin-top: 46px;

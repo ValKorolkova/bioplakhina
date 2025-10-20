@@ -16,15 +16,15 @@ function Footer() {
             <nav className="footerContainer">
             <Row>
                 <Col xl={4} className="footer-contact-container lora-regular">
-                    <a href="mailto:bioplakhina@mail.ru" className="mail-link">bioplakhina@mail.ru</a>
-                    <p>+382 67 123456</p>
+                    <a href="mailto:bioplakhina@mail.ru" className="mail-link">daria.plahina@gmail.com</a>
+                    <p>+7 (916) 709 27 30</p>
                 </Col>
                 <Col xl={4} className="footer-logo-container">
                     <Link to="/" className="logo-bioplakhina lora-regular">Bioplakhina</Link>
                 </Col>
                 <Col xl={4} className="footer-social-container">
                     <img className="footer-social" src={instagram} alt="instagram"/>
-                    <img className="footer-social" src={telegram} alt="telegram"/>
+                    <Link to="https://t.me/virusofknowledge"><img className="footer-social" src={telegram} alt="telegram"/></Link>
                     <img src={whatsup} alt="whatsup"/>
                 </Col>
                 </Row>
