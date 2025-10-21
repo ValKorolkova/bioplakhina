@@ -1,6 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-import plakhina from "./Plakhina_cut.png"
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./firstPage.css";
 import Button from "../button/Button";

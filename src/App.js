@@ -11,6 +11,8 @@ import About from './components/about/About';
 import Education from './components/education/Education';
 import Review from './components/review/Review';
 import Footer from './components/footer/Footer';
+// import FirstPage from './components/firstPage/FirstPage';
+
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/study" element={<Education />} />
+        {/* <Route path="/" element={<FirstPage />} /> */}
+
         <Route path= "/" element={<Home />} />
         <Route path= "/review" element={<Review />} />
       </Routes>
