@@ -78,6 +78,6 @@
     }
     .review-container {
         margin-top: 40px;
-        max-height: 260px;
+        max-height: 40vh;
     }
 }

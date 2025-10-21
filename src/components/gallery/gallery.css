@@ -69,4 +69,9 @@
     .gallery-image {
         max-width: 100%;
     }
+    .gallery-wrapper {
+
+  gap: 0rem;
+}
+
 }
